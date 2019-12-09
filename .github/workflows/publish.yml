@@ -1,23 +1,23 @@
 name: Publish
 
 on:
-    push:
-        tags:
-            - '**'
+  push:
+    tags:
+      - '**'
 
 jobs:
-    publish:
-        runs-on: ubuntu-18.04
+  publish:
+    runs-on: ubuntu-18.04
 
-        strategy:
-            matrix:
-                node-version: [10.x]
+    strategy:
+      matrix:
+        node-version: [10.x]
 
-        steps:
-            - uses: actions/checkout@v1
-            - name: Use Node.js ${{ matrix.node-version }}
-            uses: actions/setup-node@v1
-            with:
-                node-version: ${{ matrix.node-version }}
-            - name: Publish
-                run: npm publish
+    steps:
+      - uses: actions/checkout@v1
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node-version }}
+      - name: Publish
+        run: npm publish
