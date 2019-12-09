@@ -1,0 +1,24 @@
+{
+    "name": "muscadine",
+    "version": "0.0.1",
+    "description": "Models repo for Berrybox",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/TeamBerry/muscadine.git"
+    },
+    "author": "Team Berry",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/TeamBerry/muscadine/issues"
+    },
+    "homepage": "https://github.com/TeamBerry/muscadine#readme",
+    "devDependencies": {
+        "ts-node": "^8.5.4",
+        "tslint": "^5.20.1",
+        "typescript": "^3.7.3"
+    }
+}
