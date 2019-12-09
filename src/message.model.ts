@@ -1,4 +1,4 @@
-export class Message {
+export default class Message {
     public author: string | { _id: string, name: string }
     public contents: string
     public source: string
