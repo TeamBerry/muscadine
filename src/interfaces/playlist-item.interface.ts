@@ -1,5 +1,5 @@
 export interface PlaylistItem {
-    _id: string
+    _id?: string
     submittedAt: Date
     video: any
     submitted_by: any
