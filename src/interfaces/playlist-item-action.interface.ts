@@ -13,6 +13,13 @@ export interface PlaylistItemActionRequest {
      */
     item: string;
     /**
+     * The YouTube uID of the video to add
+     *
+     * @type {string}
+     * @memberof PlaylistItemSubmissionRequest
+     */
+    link: string;
+    /**
      * Identifier of the user who requested the cancel
      *
      * @type {string}
@@ -26,15 +33,9 @@ export interface PlaylistItemActionRequest {
      * @memberof PlaylistItemCancelRequest
      */
     boxToken: string;
-    /**
-     * Action type of the request
-     *
-     * - 'cancel': the video will be removed from the playlist
-     * - 'ignore': the video will be marked for skip
-     * - 'reinstate': the skip mark will be removed from the video
-     *
-     * @type {('cancel' | 'ignore' | 'reinstate')}
-     * @memberof PlaylistItemActionRequest
-     */
-    action: 'cancel' | 'ignore' | 'reinstate';
 }
+
+export type PlaylistItemCancelRequest = Pick<PlaylistItemActionRequest, 'item' | 'userToken' | 'boxToken'>
+export type PlaylistItemSubmissionRequest = Pick<PlaylistItemActionRequest, 'link' | 'userToken' | 'boxToken'>
+export type PlaylistItemIgnoreRequest = Pick<PlaylistItemActionRequest, 'item' | 'userToken' | 'boxToken'>
+export type PlaylistItemUnignoreRequest = Pick<PlaylistItemActionRequest, 'item' | 'userToken' | 'boxToken'>
