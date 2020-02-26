@@ -1,5 +1,8 @@
 // Models
-export { Message } from './models/message.model'
+export {
+    Message,
+    FeedbackMessage
+} from './models/message.model'
 // Interfaces
 export { PlaylistItem } from './interfaces/playlist-item.interface'
 export {
