@@ -16,23 +16,15 @@ export class Message {
 
 export class FeedbackMessage extends Message {
     /**
-     * Qualifies the message. Server will send 'feedbacks'
-     *
-     * @type {('feedback' | 'message')}
-     * @memberof Message
-     */
-    public type: 'feedback' | 'message'
-    /**
      * Qualifies the feedback of the message
      *
      * @type {('error' | 'success' | 'info' | 'warning')}
      * @memberof Message
      */
-    public feedbackType?: 'error' | 'success' | 'info' | 'warning'
+    public feedbackType: 'error' | 'success' | 'info' | 'warning'
 
     constructor(message?: any) {
         super();
-        this.type = message && message.type || 'message'
         this.feedbackType = message && message.feedbackType || null
     }
 }
