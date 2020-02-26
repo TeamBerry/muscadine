@@ -5,5 +5,4 @@ export interface PlaylistItem {
     submitted_by: any
     startTime: Date
     endTime: Date
-    ignored: boolean
 }
