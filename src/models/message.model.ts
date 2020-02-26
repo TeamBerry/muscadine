@@ -24,7 +24,7 @@ export class FeedbackMessage extends Message {
     public feedbackType: 'error' | 'success' | 'info' | 'warning'
 
     constructor(message?: any) {
-        super();
+        super(message);
         this.feedbackType = message && message.feedbackType || null
     }
 }
