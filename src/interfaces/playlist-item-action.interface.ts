@@ -37,5 +37,3 @@ export interface PlaylistItemActionRequest {
 
 export type PlaylistItemCancelRequest = Pick<PlaylistItemActionRequest, 'item' | 'userToken' | 'boxToken'>
 export type PlaylistItemSubmissionRequest = Pick<PlaylistItemActionRequest, 'link' | 'userToken' | 'boxToken'>
-export type PlaylistItemIgnoreRequest = Pick<PlaylistItemActionRequest, 'item' | 'userToken' | 'boxToken'>
-export type PlaylistItemUnignoreRequest = Pick<PlaylistItemActionRequest, 'item' | 'userToken' | 'boxToken'>
