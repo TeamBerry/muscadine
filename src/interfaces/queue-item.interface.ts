@@ -5,6 +5,7 @@ export interface QueueItem {
     submitted_by: any
     startTime: Date
     endTime: Date
+    isPreselected: boolean
 }
 
 export interface Video {
