@@ -9,7 +9,7 @@ export {
 // Interfaces
 export { QueueItem } from './interfaces/queue-item.interface'
 export {
-    QueueItemCancelRequest,
+    QueueItemActionRequest,
     VideoSubmissionRequest,
     PlaylistSubmissionRequest
 } from './interfaces/queue-actions.interface'

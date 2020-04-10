@@ -1,6 +1,6 @@
 import { BoxScope } from "./box-scope.interface"
 
-export interface QueueItemCancelRequest extends BoxScope {
+export interface QueueItemActionRequest extends BoxScope {
     /**
      * Identifier of the video target in the queue
      *
@@ -18,7 +18,7 @@ export interface VideoSubmissionRequest extends BoxScope {
      * The YouTube uID of the video to add
      *
      * @type {string}
-     * @memberof QueueItemActionRequest
+     * @memberof VideoSubmissionRequest
      */
     link: string
 }
