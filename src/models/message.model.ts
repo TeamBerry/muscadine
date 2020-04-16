@@ -8,7 +8,7 @@ export class Message {
     constructor(message?: any) {
         this.author = message && message.author || null
         this.contents = message && message.contents
-        this.source = message && message.source || 'user'
+        this.source = message && message.source || 'human'
         this.scope = message && message.scope || null
         this.time = message && message.time || new Date()
     }
