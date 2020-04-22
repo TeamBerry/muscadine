@@ -1,7 +1,8 @@
 // Models
 export {
     Message,
-    FeedbackMessage
+    FeedbackMessage,
+    SystemMessage
 } from './models/message.model'
 export {
     BoxScope
