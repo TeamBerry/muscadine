@@ -25,10 +25,10 @@ export class FeedbackMessage extends Message {
     /**
      * Qualifies the feedback of the message
      *
-     * @type {('error' | 'success' | 'info' | 'warning')}
+     * @type {('error' | 'success' | 'info' | 'warning' | 'berries')}
      * @memberof Message
      */
-    public feedbackType: 'error' | 'success' | 'info' | 'warning'
+    public feedbackType: 'error' | 'success' | 'info' | 'warning' | 'berries'
 
     constructor(message?: any) {
         super(message)
