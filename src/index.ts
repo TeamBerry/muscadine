@@ -13,5 +13,5 @@ export {
     VideoSubmissionRequest,
     PlaylistSubmissionRequest
 } from './interfaces/queue-actions.interface'
-export { Subscriber } from './interfaces/subscriber.interface'
+export { Subscriber, BerryCount } from './interfaces/subscriber.interface'
 export { SyncPacket } from './interfaces/sync-packet.interface'
