@@ -15,9 +15,12 @@ export class Message {
 }
 
 export class SystemMessage extends Message {
-    constructor(message?: Partial<Message>) {
+    public context: 'success' | 'info' | 'berries' | null
+
+    constructor(message?: Partial<SystemMessage>) {
         super(message)
         this.source = 'system'
+        this.context = message?.context ?? null
     }
 }
 
@@ -25,14 +28,14 @@ export class FeedbackMessage extends Message {
     /**
      * Qualifies the feedback of the message
      *
-     * @type {('error' | 'success' | 'info' | 'warning' | 'berries')}
+     * @type {('error' | 'success' | 'info' | 'warning')}
      * @memberof Message
      */
-    public feedbackType: 'error' | 'success' | 'info' | 'warning' | 'berries'
+    public context: 'error' | 'success' | 'info' | 'warning' | null
 
-    constructor(message?: any) {
+    constructor(message?: Partial<FeedbackMessage>) {
         super(message)
         this.source = 'feedback'
-        this.feedbackType = message && message.feedbackType || null
+        this.context = message?.context ?? null
     }
 }
