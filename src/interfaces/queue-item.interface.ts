@@ -6,6 +6,17 @@ export interface QueueItem {
     startTime: Date
     endTime: Date
     isPreselected: boolean
+    /**
+     * Indicates if the current state of the video was obtained by using berries
+     *
+     * A queue item forced with berries cannot be:
+     * - skipped if it's playing
+     * - unselected if it's preselected
+     *
+     * @type {boolean}
+     * @memberof QueueItem
+     */
+    stateForcedWithBerries: boolean
 }
 
 export interface Video {
