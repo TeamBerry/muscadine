@@ -8,7 +8,7 @@ export {
     BoxScope
 } from './interfaces/box-scope.interface'
 // Interfaces
-export { QueueItem } from './interfaces/queue-item.interface'
+export { QueueItem, PlayingItem } from './interfaces/queue-item.interface'
 export {
     QueueItemActionRequest,
     VideoSubmissionRequest,

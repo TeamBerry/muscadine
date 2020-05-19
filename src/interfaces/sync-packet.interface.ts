@@ -1,4 +1,4 @@
-import { QueueItem } from "./queue-item.interface"
+import { PlayingItem } from "./queue-item.interface"
 
 /**
  * Packet sent to clients for video sync
@@ -15,8 +15,8 @@ export interface SyncPacket {
     /**
      * The video to play to ensure sync
      *
-     * @type {QueueItem}
+     * @type {PlayingItem}
      * @memberof SyncPacket
      */
-    item: QueueItem
+    item: PlayingItem
 }
