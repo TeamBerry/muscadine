@@ -25,6 +25,6 @@ export interface Video {
     duration: string
 }
 
-export interface CatalogItem {
-
+export interface PlayingItem extends QueueItem {
+    position: number
 }
