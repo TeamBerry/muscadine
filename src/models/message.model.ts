@@ -1,5 +1,5 @@
 export class Message {
-    public author: string | { _id: string, name: string }
+    public author: string | { _id: string, name: string, color: string }
     public contents: string
     public source: string
     public scope: string
