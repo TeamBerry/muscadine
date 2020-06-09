@@ -1,4 +1,5 @@
 import { BoxScope } from "./box-scope.interface";
+import { Role } from "./acl.interface";
 
 export interface Subscriber extends BoxScope {
     connexions: Array<{
@@ -19,3 +20,10 @@ export interface Subscriber extends BoxScope {
 }
 
 export type BerryCount = Pick<Subscriber, 'userToken' | 'boxToken' | 'berries'>
+
+export type ActiveSubscriber = {
+    _id: string
+    name: string
+    origin: Subscriber['connexions'][0]['origin']
+    role: Role
+}
