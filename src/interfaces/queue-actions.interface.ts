@@ -21,6 +21,13 @@ export interface VideoSubmissionRequest extends BoxScope {
      * @memberof VideoSubmissionRequest
      */
     link: string
+    /**
+     * Indicates if the video has to be preselected or played now on its submission
+     *
+     * @type {('next' | 'now')}
+     * @memberof VideoSubmissionRequest
+     */
+    flag?: 'next' | 'now'
 }
 
 export interface PlaylistSubmissionRequest extends BoxScope {
