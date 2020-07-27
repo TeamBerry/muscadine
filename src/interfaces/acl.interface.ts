@@ -1,6 +1,6 @@
 import { BoxScope } from "./box-scope.interface"
 
-export type Permission = 'addVideo' | 'removeVideo' | 'forceNext' | 'forcePlay' | 'skipVideo' | 'editBox' | 'promoteVIP' | 'demoteVIP'
+export type Permission = 'addVideo' | 'removeVideo' | 'forceNext' | 'forcePlay' | 'skipVideo' | 'editBox' | 'promoteVIP' | 'demoteVIP' | 'bypassVideoDurationLimit'
 
 export type Role = 'admin' | 'moderator' | 'vip' | 'simple'
 
