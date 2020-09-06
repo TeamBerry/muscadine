@@ -5,12 +5,12 @@ export interface BoxScope {
      * @type {string}
      * @memberof QueueItemActionRequest
      */
-    userToken: string;
+    userToken: string
     /**
      * Identifier of the box of the playlist
      *
      * @type {string}
      * @memberof QueueItemActionRequest
      */
-    boxToken: string;
+    boxToken: string
 }

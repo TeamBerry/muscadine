@@ -9,7 +9,9 @@
     },
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
-        "prepublish": "./node_modules/.bin/tsc"
+        "prepublish": "./node_modules/.bin/tsc",
+        "lint:check": "eslint -c .eslintrc.json --ext .ts src",
+        "lint:fix": "eslint -c .eslintrc.json --ext .ts src --fix"
     },
     "repository": {
         "type": "git",

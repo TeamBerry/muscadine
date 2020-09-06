@@ -5,6 +5,7 @@ export class Message {
     public scope: string
     public time: Date
 
+    // eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
     constructor(message?: any) {
         this.author = message && message.author || null
         this.contents = message && message.contents

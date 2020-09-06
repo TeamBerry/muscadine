@@ -1,14 +1,14 @@
 export interface Session {
-    bearer: string,
-    subject: AuthSubject,
+    bearer: string
+    subject: AuthSubject
     expiresIn: number | string
 }
 
-export type AuthSubject = {
-    _id: string,
-    name: string,
+export interface AuthSubject {
+    _id: string
+    name: string
     settings: {
-        theme: 'light' | 'dark',
+        theme: 'light' | 'dark'
         picture: string
     }
 }

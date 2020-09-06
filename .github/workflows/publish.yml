@@ -3,7 +3,7 @@ name: Publish
 on:
   push:
     tags:
-      - '**'
+      - "**"
 
 jobs:
   publish:
@@ -19,6 +19,10 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: ${{ matrix.node-version }}
+      - name: Install Dependencies
+        run: npm install
+      - name: Lint check
+        run: npm run lint:check
       - name: Authenticating to Team Berry's GitHub Registry
         run: echo "//npm.pkg.github.com/:_authToken=${{ secrets.REGISTRY_KEY }}" >> ~/.npmrc
       - name: Publish

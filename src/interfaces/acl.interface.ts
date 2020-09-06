@@ -10,6 +10,7 @@ export interface ACLConfig {
     simple: Array<Permission>
 }
 
+// eslint-disable-next-line no-shadow
 export enum ACLEvaluationResult {
     NO = 0,
     YES = 1,
@@ -23,7 +24,7 @@ export interface RoleChangeRequest {
      * @type {string}
      * @memberof RoleChangeRequest
      */
-    source: string,
+    source: string
     /**
      * Who and where to apply the request
      *
@@ -37,5 +38,5 @@ export interface RoleChangeRequest {
      * @type {Role}
      * @memberof RoleChangeRequest
      */
-    role: Role,
+    role: Role
 }
