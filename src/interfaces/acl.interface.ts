@@ -10,6 +10,12 @@ export interface ACLConfig {
     simple: Array<Permission>
 }
 
+export enum ACLEvaluationResult {
+    NO = 0,
+    YES = 1,
+    BERRIES = 2
+}
+
 export interface RoleChangeRequest {
     /**
      * The requester
