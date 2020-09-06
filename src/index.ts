@@ -16,4 +16,4 @@ export {
 } from './interfaces/queue-actions.interface'
 export { Subscriber, BerryCount, ActiveSubscriber } from './interfaces/subscriber.interface'
 export { SyncPacket } from './interfaces/sync-packet.interface'
-export { Role, Permission, ACLConfig } from './interfaces/acl.interface'
+export { Role, Permission, ACLConfig, ACLEvaluationResult } from './interfaces/acl.interface'
