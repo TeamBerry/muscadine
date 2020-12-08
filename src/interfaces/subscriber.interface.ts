@@ -24,6 +24,9 @@ export type BerryCount = Pick<Subscriber, 'userToken' | 'boxToken' | 'berries'>
 export interface ActiveSubscriber {
     _id: string
     name: string
+    settings: {
+        picture: string
+    }
     origin: Subscriber['connexions'][0]['origin']
     role: Role
 }
