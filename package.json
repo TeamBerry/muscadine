@@ -1,5 +1,5 @@
 {
-    "name": "muscadine",
+    "name": "@teamberry/muscadine",
     "version": "0.10.0",
     "description": "Models repo for Berrybox",
     "main": "dist/index.js",
