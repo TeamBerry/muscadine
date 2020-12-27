@@ -1,5 +1,11 @@
 export class Message {
-    public author: { _id: string, name?: string, color?: string, role?: string }
+    public author: {
+        _id: string
+        name?: string
+        color?: string
+        role?: string
+        badge?: string
+    }
     public contents: string
     public source: string
     public scope: string
