@@ -1,5 +1,6 @@
 export interface QueueItem {
     _id?: string
+    box: string
     submittedAt: Date
     video: any
     submitted_by: any
