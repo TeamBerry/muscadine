@@ -1,6 +1,6 @@
 {
     "name": "@teamberry/muscadine",
-    "version": "0.10.3",
+    "version": "0.11.0",
     "description": "Models repo for Berrybox",
     "main": "dist/index.js",
     "types": "dist/index.d.ts",
