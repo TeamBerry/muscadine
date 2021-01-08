@@ -6,13 +6,24 @@ export interface QueueItem {
     submitted_by: any
     startTime: Date
     endTime: Date
+    /**
+     * Indicates if the video is next to play. Deprecated.
+     *
+     * @type {boolean}
+     * @memberof QueueItem
+     */
     isPreselected: boolean
+    /**
+     * If set, the video will be played in priority, according to an implicit FIFO set by all the videos that
+     * have a value for this property.
+     */
+    setToNext: Date
     /**
      * Indicates if the current state of the video was obtained by using berries
      *
      * A queue item forced with berries cannot be:
      * - skipped if it's playing
-     * - unselected if it's preselected
+     * - unset from the next mini-queue
      *
      * @type {boolean}
      * @memberof QueueItem
