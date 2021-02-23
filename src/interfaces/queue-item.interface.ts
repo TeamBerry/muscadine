@@ -7,13 +7,6 @@ export interface QueueItem {
     startTime: Date
     endTime: Date
     /**
-     * Indicates if the video is next to play. Deprecated.
-     *
-     * @type {boolean}
-     * @memberof QueueItem
-     */
-    isPreselected: boolean
-    /**
      * If set, the video will be played in priority, according to an implicit FIFO set by all the videos that
      * have a value for this property.
      */
